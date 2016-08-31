@@ -17,9 +17,8 @@ if(isset($_POST['login']))
 		$_SESSION['id'] = $row['id'];
 		$_SESSION['user_name'] = $row['user_name'];
 		$_SESSION['email_id'] = $row['email_id'];
-		header('location:dashboard.php');
-		
-	}
+	        header('location:dashboard.php');
+		}
 	else{
 		header('location:login.php');
 	}
